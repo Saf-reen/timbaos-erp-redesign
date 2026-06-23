@@ -12,4 +12,7 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Force Nitro to run outside the Lovable sandbox (e.g. on Render CI).
+  // The Lovable config only runs Nitro inside the sandbox by default.
+  nitro: true,
 });
