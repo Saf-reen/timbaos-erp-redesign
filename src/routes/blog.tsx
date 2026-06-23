@@ -109,13 +109,6 @@ const categoryIcons: Record<string, React.ElementType> = {
 };
 
 export const Route = createFileRoute("/blog")({
-  head: () => ({
-    meta: [
-      { title: "Blog — Akarsh Digitals" },
-      { name: "description", content: "Insights on TIMBAOS ERP, cloud technology, digital transformation and enterprise solutions from the Akarsh Digitals team." },
-      { property: "og:title", content: "Blog — Akarsh Digitals" },
-    ],
-  }),
   component: BlogPage,
 });
 

@@ -9,13 +9,6 @@ import handshake from "@/assets/hero-handshake.jpg";
 import dashboard from "@/assets/timbaos-dashboard.jpg";
 
 export const Route = createFileRoute("/about-us")({
-  head: () => ({
-    meta: [
-      { title: "About Us — Akarsh Digitals" },
-      { name: "description", content: "Akarsh Digitals is a premier IT solutions company, driving digital transformation across multiple industries." },
-      { property: "og:title", content: "About Us — Akarsh Digitals" },
-    ],
-  }),
   component: AboutPage,
 });
 

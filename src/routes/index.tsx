@@ -10,13 +10,6 @@ import handshake from "@/assets/hero-handshake.jpg";
 import dashboard from "@/assets/timbaos-dashboard.jpg";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Akarsh Digitals — Empowering Your Business" },
-      { name: "description", content: "Akarsh Digitals empowers Indian businesses with TIMBAOS ERP — a fully integrated cloud-ready platform covering finance, HR, CRM, manufacturing and more." },
-      { property: "og:title", content: "Akarsh Digitals — Empowering Your Business" },
-    ],
-  }),
   component: Home,
 });
 

@@ -9,13 +9,6 @@ import handshake from "@/assets/hero-handshake.jpg";
 import dashboard from "@/assets/timbaos-dashboard.jpg";
 
 export const Route = createFileRoute("/industries")({
-  head: () => ({
-    meta: [
-      { title: "Industries — Akarsh Digitals" },
-      { name: "description", content: "Akarsh Digitals delivers cutting-edge digital solutions across IT, Healthcare, Manufacturing, BFSI, Education, Government, Telecom and Real Estate." },
-      { property: "og:title", content: "Industries — Akarsh Digitals" },
-    ],
-  }),
   component: IndustriesPage,
 });
 

@@ -10,13 +10,6 @@ import worldTopology from "world-atlas/countries-110m.json";
 import handshake from "@/assets/hero-handshake.jpg";
 
 export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: "Contact — Akarsh Digitals" },
-      { name: "description", content: "Connect with the Akarsh Digitals team. Offices across Hyderabad, Bangalore, Chennai, Vijayawada, Pune, Mumbai and Kerala." },
-      { property: "og:title", content: "Contact — Akarsh Digitals" },
-    ],
-  }),
   component: ContactPage,
 });
 
