@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import {
   Phone, Mail, Instagram, Linkedin, Facebook, Twitter, Youtube,
-  Menu, X, Sparkles, ArrowRight,
+  Menu, X, Sparkles, ArrowRight, LogIn,
 } from "lucide-react";
 import akarshLogo from "@/assets/akarsh-logo.png";
 
@@ -101,6 +101,15 @@ export function Header() {
               </span>
             </span>
           </Link>
+
+          <a
+            href="https://timbaos.com/login"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-2 inline-flex items-center gap-1.5 px-4 py-2 rounded-md border border-primary text-primary text-sm font-bold hover:bg-primary hover:text-white transition-colors"
+          >
+            <LogIn className="w-4 h-4" /> Login
+          </a>
         </nav>
 
         <button
@@ -129,6 +138,14 @@ export function Header() {
             >
               <Sparkles className="w-4 h-4 mr-1.5" /> TIMBAOS – ERP
             </Link>
+            <a
+              href="https://timbaos.com/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-md border border-primary text-primary text-sm font-bold hover:bg-primary hover:text-white transition-colors"
+            >
+              <LogIn className="w-4 h-4" /> Login
+            </a>
           </div>
         </div>
       )}
