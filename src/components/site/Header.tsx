@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import {
   Phone, Mail, Instagram, Linkedin, Facebook, Twitter, Youtube,
-  Menu, X, Sparkles, ArrowRight, LogIn,
+  Menu, X, Sparkles, ArrowRight,
 } from "lucide-react";
 import akarshLogo from "@/assets/akarsh-logo.png";
 
@@ -17,7 +17,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-background shadow-sm">
 
-      {/* ── TIMBAOS announcement bar ── */}
+      {/* ── Announcement bar ── */}
       {bannerVisible && (
         <div className="bg-accent border-b border-primary/20 relative">
           <div className="container-x flex items-center justify-center gap-3 py-2 pr-8">
@@ -26,13 +26,12 @@ export function Header() {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
             </span>
             <p className="text-xs font-semibold text-[var(--primary-deep)] text-center">
-              <span className="font-black">TIMBAOS ERP</span> — India's Complete Business Management Platform.{" "}
+              <span className="font-black">Akarsh Digital</span> — Product Engineering & AI Solutions for Modern Businesses.{" "}
               <Link
-                to="/services/$slug"
-                params={{ slug: "timbaos-erp" }}
+                to="/contact"
                 className="inline-flex items-center gap-1 underline underline-offset-2 font-bold hover:text-primary transition-colors"
               >
-                Explore now <ArrowRight className="w-3 h-3" />
+                Request a Demo <ArrowRight className="w-3 h-3" />
               </Link>
             </p>
           </div>
@@ -88,28 +87,13 @@ export function Header() {
           <Link to="/contact" className={navLink} activeProps={activeProps}>Contact</Link>
 
           <Link
-            to="/services/$slug"
-            params={{ slug: "timbaos-erp" }}
-            className="ml-3 btn-primary !py-2 !px-5 text-sm relative"
+            to="/contact"
+            className="ml-3 btn-primary !py-2 !px-5 text-sm"
           >
             <Sparkles className="w-4 h-4 mr-1.5" />
-            TIMBAOS – ERP
-            <span className="absolute -top-1.5 -right-1.5 flex h-3.5 w-3.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-60" />
-              <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-white items-center justify-center">
-                <span className="text-[6px] font-black text-primary leading-none">★</span>
-              </span>
-            </span>
+            Request a Demo
           </Link>
 
-          <a
-            href="https://timbaos.com/login"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ml-2 inline-flex items-center gap-1.5 px-4 py-2 rounded-md border border-primary text-primary text-sm font-bold hover:bg-primary hover:text-white transition-colors"
-          >
-            <LogIn className="w-4 h-4" /> Login
-          </a>
         </nav>
 
         <button
@@ -131,21 +115,12 @@ export function Header() {
             <Link to="/blog" onClick={() => setOpen(false)} className={navLink}>Blog</Link>
             <Link to="/contact" onClick={() => setOpen(false)} className={navLink}>Contact</Link>
             <Link
-              to="/services/$slug"
-              params={{ slug: "timbaos-erp" }}
+              to="/contact"
               onClick={() => setOpen(false)}
               className="btn-primary mt-3"
             >
-              <Sparkles className="w-4 h-4 mr-1.5" /> TIMBAOS – ERP
+              <Sparkles className="w-4 h-4 mr-1.5" /> Request a Demo
             </Link>
-            <a
-              href="https://timbaos.com/login"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2 inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-md border border-primary text-primary text-sm font-bold hover:bg-primary hover:text-white transition-colors"
-            >
-              <LogIn className="w-4 h-4" /> Login
-            </a>
           </div>
         </div>
       )}

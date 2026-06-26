@@ -1,12 +1,12 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useState } from "react";
 import {
-  CheckCircle2, ArrowRight, Sparkles, Phone, Mail,
+  CheckCircle2, ArrowRight, Sparkles, Phone, Mail, ExternalLink,
   ShoppingCart, Calculator, Users, Headphones, Warehouse,
   Factory, Store, Truck, Building2, Briefcase, Globe,
   BarChart3, Shield, Package, Zap, HeartHandshake,
   LayoutDashboard, FileText, RefreshCw, BadgePercent,
-  ClipboardList, Boxes, UserCheck, TrendingUp, Bell,
+  ClipboardList, Boxes, TrendingUp,
   Network, Lock, Layers, FlaskConical,
 } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
@@ -18,12 +18,12 @@ export const Route = createFileRoute("/services/$slug")({
   head: ({ params }) => {
     const isTimbaos = params.slug === "timbaos-erp";
     const title = isTimbaos
-      ? "TIMBAOS ERP — Complete Business Management Platform"
-      : `${getService(params.slug)?.title ?? "Service"} — Akarsh Digitals`;
+      ? "Enterprise ERP Platform — Complete Business Management | Akarsh Digital"
+      : `${getService(params.slug)?.title ?? "Service"} — Akarsh Digital`;
     return {
       meta: [
         { title },
-        { name: "description", content: isTimbaos ? "TIMBAOS ERP helps organizations streamline and manage their entire business operations from a single platform." : "" },
+        { name: "description", content: isTimbaos ? "Enterprise ERP Platform helps organizations manage finance, CRM, warehouse, assets, support, and sales from a single intelligent platform." : "" },
         { property: "og:title", content: title },
       ],
     };
@@ -45,11 +45,11 @@ export const Route = createFileRoute("/services/$slug")({
 /* ─── data ─── */
 
 const keyFeatures = [
-  { Icon: UserCheck,   text: "Lead and customer management" },
-  { Icon: FileText,    text: "Quotations and sales orders" },
-  { Icon: BadgePercent,text: "Invoice generation" },
-  { Icon: TrendingUp,  text: "Sales tracking and reporting" },
-  { Icon: RefreshCw,   text: "Customer payment tracking" },
+  { Icon: Calculator,  text: "GST-compliant invoicing" },
+  { Icon: FileText,    text: "Financial reporting & P&L" },
+  { Icon: RefreshCw,   text: "Payment tracking" },
+  { Icon: TrendingUp,  text: "Tax management & GST filing" },
+  { Icon: BadgePercent,text: "Accounting controls" },
 ];
 
 const oneStopBenefits = [
@@ -73,62 +73,62 @@ const suitableFor = [
 
 const erpFeatures = [
   {
-    Icon: ShoppingCart,
-    accent: "bg-rose-50 text-primary border-rose-100",
-    title: "Sales & Purchase",
-    points: [
-      "Customer & Vendor management",
-      "Sales & Purchase requisitions",
-      "Purchase & Sales orders",
-      "Goods receipt tracking",
-      "Supplier payment management",
-    ],
-  },
-  {
     Icon: Calculator,
-    accent: "bg-orange-50 text-primary border-orange-100",
-    title: "Accounts",
+    accent: "bg-rose-50 text-primary border-rose-100",
+    title: "Accounting & Finance",
     points: [
       "GST-compliant invoicing",
-      "GST reports and summaries",
-      "Tax calculation and tracking",
-      "Export data for GST filing",
+      "Financial reporting & P&L",
+      "Payment tracking",
+      "Tax management & GST filing",
+      "Accounting controls",
     ],
   },
   {
     Icon: Users,
-    accent: "bg-red-50 text-primary border-red-100",
-    title: "CRM",
+    accent: "bg-orange-50 text-primary border-orange-100",
+    title: "CRM & Customer Management",
     points: [
-      "Lead pipeline and contact management",
-      "Customer 360° view",
-      "Quotation to order conversion",
-      "After-sales support tracking",
-      "Customer communication history",
-    ],
-  },
-  {
-    Icon: Headphones,
-    accent: "bg-rose-50 text-primary border-rose-100",
-    title: "Ticketing – Help Desk",
-    points: [
-      "Customer support ticket creation",
-      "Ticket assignment and escalation",
-      "SLA tracking",
-      "Status monitoring",
-      "Resolution reporting",
+      "Lead management",
+      "Opportunity tracking",
+      "Customer database",
+      "Sales monitoring",
+      "Quotation management",
     ],
   },
   {
     Icon: Warehouse,
-    accent: "bg-orange-50 text-primary border-orange-100",
+    accent: "bg-red-50 text-primary border-red-100",
     title: "Warehouse Management",
     points: [
       "Inventory tracking",
-      "Stock movement monitoring",
+      "Stock monitoring",
       "Multi-warehouse support",
-      "Goods inward and outward management",
-      "Stock valuation and reporting",
+      "Goods movement tracking",
+      "Inventory reports",
+    ],
+  },
+  {
+    Icon: ShoppingCart,
+    accent: "bg-rose-50 text-primary border-rose-100",
+    title: "Asset Management",
+    points: [
+      "Asset allocation",
+      "Asset tracking",
+      "Maintenance monitoring",
+      "Asset reports",
+    ],
+  },
+  {
+    Icon: Headphones,
+    accent: "bg-orange-50 text-primary border-orange-100",
+    title: "Ticketing & Support",
+    points: [
+      "Ticket creation",
+      "Ticket assignment",
+      "Escalation management",
+      "SLA monitoring",
+      "Resolution tracking",
     ],
   },
 ];
@@ -267,8 +267,8 @@ function ServicePage() {
     <>
       {/* 1 ── HERO */}
       <PageHero
-        title="ERP Solution – Complete Business Management Platform"
-        subtitle="Our ERP solution helps organizations streamline and manage their entire business operations from a single platform."
+        title="Enterprise ERP Platform – Complete Business Management"
+        subtitle="A unified business management platform that brings finance, inventory, customer management, support operations, and business intelligence into a single ecosystem."
         bgImage={handshake}
       >
         <span className="mt-6 inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur text-white text-xs font-bold tracking-wider uppercase">
@@ -282,13 +282,13 @@ function ServicePage() {
           <div>
             <span className="text-xs font-bold uppercase tracking-[0.22em] text-primary">Overview</span>
             <h2 className="mt-2 font-display font-bold text-3xl text-[var(--primary-deep)] leading-snug">
-              Sales & Purchase Management
+              Accounting & Finance Management
             </h2>
             <div className="mt-3 w-10 h-1 rounded-full bg-gradient-to-r from-[var(--primary-deep)] to-primary" />
             <p className="mt-5 text-muted-foreground leading-relaxed text-[15px]">
-              TIMBAOS ERP gives your sales and procurement teams a single, unified
-              workspace — from first contact to final payment — eliminating silos and
-              manual effort across your entire order lifecycle.
+              Manage invoicing, taxation, accounting, payments, and financial reporting
+              from a centralized platform — GST-compliant, real-time, and fully integrated
+              with every other module in the ecosystem.
             </p>
 
             <div className="mt-8 grid sm:grid-cols-2 gap-2.5">
@@ -323,8 +323,8 @@ function ServicePage() {
       <section className="py-14 bg-[var(--soft)] border-y border-border">
         <div className="container-x">
           <div className="text-center mb-10">
-            <span className="text-xs font-bold uppercase tracking-[0.22em] text-primary">Why TIMBAOS</span>
-            <h2 className="mt-2 font-display font-bold text-2xl text-[var(--primary-deep)]">One Stop Solution</h2>
+            <span className="text-xs font-bold uppercase tracking-[0.22em] text-primary">Why Our ERP</span>
+            <h2 className="mt-2 font-display font-bold text-2xl text-[var(--primary-deep)]">One Platform. Complete Business Control.</h2>
             <div className="mx-auto mt-3 w-10 h-1 rounded-full bg-gradient-to-r from-[var(--primary-deep)] to-primary" />
             <p className="mt-3 text-sm text-muted-foreground max-w-lg mx-auto leading-relaxed">
               Replace disconnected tools with a single, fully integrated ERP that runs every department from one place.
@@ -384,7 +384,7 @@ function ServicePage() {
         <div className="container-x">
           <div className="text-center mb-12">
             <span className="text-xs font-bold uppercase tracking-[0.22em] text-primary">Modules</span>
-            <h2 className="mt-2 font-display font-extrabold text-3xl text-[var(--primary-deep)]">Features of TIMBAOS</h2>
+            <h2 className="mt-2 font-display font-extrabold text-3xl text-[var(--primary-deep)]">ERP Platform Features</h2>
             <div className="mx-auto mt-4 w-16 h-1 rounded-full bg-gradient-to-r from-[var(--primary-deep)] to-primary" />
           </div>
           <ModuleSelector />
@@ -416,7 +416,7 @@ function ServicePage() {
                   to="/contact"
                   className="inline-flex items-center justify-center px-7 py-3 rounded-md bg-white text-[var(--primary-deep)] font-bold text-sm hover:bg-white/90 transition shadow-lg"
                 >
-                  <Sparkles className="w-4 h-4 mr-2" /> Register for Demo
+                  <Sparkles className="w-4 h-4 mr-2" /> Request a Demo
                 </Link>
                 <a
                   href="tel:+918919829918"

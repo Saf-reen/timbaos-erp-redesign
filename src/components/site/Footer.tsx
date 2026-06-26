@@ -3,14 +3,15 @@ import { Phone, Mail, MapPin, Instagram, Linkedin, Facebook, Twitter, Youtube, S
 import akarshLogo from "@/assets/akarsh-logo.png";
 
 const footerServices = [
-  { label: "TIMBAOS – ERP", slug: "timbaos-erp" },
+  { label: "Enterprise ERP Platform", slug: "timbaos-erp" },
+  { label: "E-Law ERP", slug: "elaw-erp" },
 ];
 
 export function Footer() {
   return (
     <footer className="mt-20 bg-[var(--primary-deep)] text-white/90">
 
-      {/* ── TIMBAOS spotlight strip ── */}
+      {/* ── Product spotlight strip ── */}
       <div className="border-b border-white/10 bg-white/5">
         <div className="container-x py-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-5">
@@ -18,24 +19,23 @@ export function Footer() {
               <Sparkles className="w-6 h-6 text-white" strokeWidth={1.25} />
             </div>
             <div>
-              <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-white/50 mb-0.5">Flagship Product</p>
-              <h3 className="font-display font-extrabold text-xl text-white">TIMBAOS – ERP</h3>
-              <p className="text-sm text-white/65 mt-0.5">India's complete business management platform.</p>
+              <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-white/50 mb-0.5">Our Products</p>
+              <h3 className="font-display font-extrabold text-xl text-white">Enterprise ERP & E-Law ERP</h3>
+              <p className="text-sm text-white/65 mt-0.5">Intelligent software products for modern businesses.</p>
             </div>
           </div>
           <div className="flex flex-wrap items-center gap-4">
-            {["Finance & Accounts", "HR & Payroll", "CRM", "Inventory", "Help Desk"].map((m) => (
+            {["Finance & Accounts", "CRM", "Warehouse", "Asset Management", "Legal Practice"].map((m) => (
               <span key={m} className="flex items-center gap-1.5 text-xs text-white/60">
                 <CheckCircle2 className="w-3.5 h-3.5 text-white/40 shrink-0" /> {m}
               </span>
             ))}
           </div>
           <Link
-            to="/services/$slug"
-            params={{ slug: "timbaos-erp" }}
+            to="/contact"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white text-[var(--primary-deep)] font-bold text-sm hover:bg-white/90 transition shadow-md shrink-0"
           >
-            Explore TIMBAOS <ArrowRight className="w-4 h-4" />
+            Request a Demo <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
       </div>
@@ -51,10 +51,7 @@ export function Footer() {
             />
           </div>
           <p className="text-sm text-white/75 leading-relaxed">
-            AKARSH DIGITALS Pvt Ltd, we are dedicated to bringing the power of
-            the cloud to businesses of all sizes. Our mission is to help you
-            harness the potential of cloud technology to drive innovation,
-            efficiency, and growth.
+            Akarsh Digital is a Product Engineering & AI Solutions Company developing intelligent software products that help organizations automate operations, improve efficiency, and accelerate growth.
           </p>
           <div className="flex gap-2 mt-5">
             {[Instagram, Linkedin, Facebook, Twitter, Youtube].map((Icon, i) => (
@@ -84,7 +81,7 @@ export function Footer() {
 
         {/* Services */}
         <div>
-          <h4 className="text-white font-bold mb-4">Our Product</h4>
+          <h4 className="text-white font-bold mb-4">Products</h4>
           <ul className="space-y-2 text-sm">
             {footerServices.map((s) => (
               <li key={s.slug}>

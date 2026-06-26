@@ -14,13 +14,7 @@ export const Route = createFileRoute("/contact")({
 });
 
 const offices = [
-  { city: "Hyderabad",  heading: "Hyderabad Hub, Our Team's Heartbeat",               sub: "Nurturing Excellence from Our Hyderabad Hub." },
-  { city: "Chennai",    heading: "Empowerment through Chennai Team Unity",             sub: "Where Excellence and Collaboration Converge." },
-  { city: "Bangalore",  heading: "Reach Out to Our Bangalore Team Today.",             sub: "Collaboration Knows No Distance." },
-  { city: "Vijayawada", heading: "Connecting Made Easy, Contact Our Vijayawada Team.", sub: "Transform Your Business with Precision Tailored Solutions." },
-  { city: "Mumbai",     heading: "Elevating together, from Mumbai to beyond",          sub: "Elevate Your Business with Customized Solutions Now." },
-  { city: "Pune",       heading: "Get in Touch with Our Pune-Based Experts.",          sub: "Unlock Success with Tailored Business Solutions." },
-  { city: "Kerala",     heading: "Leveraging Cloud Services to Connect with Our Kerala Team.", sub: "Elevate Your Business with Customized Solutions Now." },
+  { city: "Hyderabad", heading: "Akarsh Digital Headquarters", sub: "Our primary office — home to product engineering, AI development, and customer success." },
 ];
 
 function ContactPage() {
@@ -30,8 +24,8 @@ function ContactPage() {
     <>
       {/* ── HERO ── */}
       <PageHero
-        title="Connect With AKARSH DIGITALS"
-        subtitle="Wherever you are, we bring world-class digital solutions to you. Reach out to our team today."
+        title="Let's Build the Future Together"
+        subtitle="Whether you're exploring ERP solutions, legal practice management platforms, or intelligent business software, our team is ready to help."
         bgImage={handshake}
       />
 
@@ -50,7 +44,7 @@ function ContactPage() {
             {[
               { Icon: Phone,  label: "Phone",    value: "+91 89198 29918",          href: "tel:+918919829918" },
               { Icon: Mail,   label: "Email",    value: "info@akarshdigitals.com",  href: "mailto:info@akarshdigitals.com" },
-              { Icon: MapPin, label: "Location", value: "Hyderabad, Bangalore, Chennai, Vijayawada, Pune, Mumbai, Kerala" },
+              { Icon: MapPin, label: "Location", value: "HITEC City, Hyderabad" },
             ].map(({ Icon, label, value, href }) => (
               <div key={label} className="flex gap-4 items-start rounded-xl border border-border bg-[var(--soft)] px-4 py-4">
                 <div className="w-10 h-10 rounded-lg grid place-items-center bg-gradient-to-br from-[var(--primary-deep)] to-primary text-white shrink-0">
@@ -121,7 +115,7 @@ function ContactPage() {
           <div className="text-center mb-10">
             <span className="text-xs font-bold uppercase tracking-[0.22em] text-primary">Worldwide</span>
             <h2 className="mt-2 font-display font-extrabold text-2xl text-[var(--primary-deep)]">
-              AKARSH DIGITALS World Wide
+              Akarsh Digital — Where We Are
             </h2>
             <div className="mx-auto mt-3 w-12 h-1 rounded-full bg-gradient-to-r from-[var(--primary-deep)] to-primary" />
             <p className="mt-4 text-sm text-muted-foreground max-w-xl mx-auto leading-relaxed">
@@ -139,7 +133,7 @@ function ContactPage() {
         <div className="container-x">
           <div className="text-center mb-12">
             <span className="text-xs font-bold uppercase tracking-[0.22em] text-primary">Our Locations</span>
-            <h2 className="mt-2 font-display font-extrabold text-2xl text-[var(--primary-deep)]">AKARSH DIGITALS Global Centers</h2>
+            <h2 className="mt-2 font-display font-extrabold text-2xl text-[var(--primary-deep)]">Akarsh Digital Office</h2>
             <div className="mx-auto mt-3 w-12 h-1 rounded-full bg-gradient-to-r from-[var(--primary-deep)] to-primary" />
           </div>
 
@@ -186,8 +180,8 @@ function ContactPage() {
                   <Globe className="w-5 h-5" strokeWidth={1.5} />
                 </div>
                 <div>
-                  <h3 className="font-bold text-[15px] leading-snug">Experience Global Cloud Services with AKARSH DIGITALS</h3>
-                  <p className="mt-2 text-white/75 text-xs leading-relaxed">Wherever You Are, We Bring Cloud Services to You.</p>
+                  <h3 className="font-bold text-[15px] leading-snug">Intelligent Software Products for Businesses Everywhere</h3>
+                  <p className="mt-2 text-white/75 text-xs leading-relaxed">Wherever your team is, our cloud-ready products are ready for you.</p>
                 </div>
               </div>
             </div>
@@ -214,7 +208,7 @@ function ContactPage() {
                   Let's Build Something Great Together
                 </h2>
                 <p className="mt-2 text-white/75 text-sm max-w-lg leading-relaxed">
-                  Whether you're exploring TIMBAOS ERP or need a tailored digital solution — our experts are one call away.
+                  Whether you're exploring our Enterprise ERP or E-Law ERP — our experts are one call away.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-3 shrink-0">
