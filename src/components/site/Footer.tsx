@@ -51,7 +51,7 @@ export function Footer() {
             />
           </div>
           <p className="text-sm text-white/75 leading-relaxed">
-            Akarsh Digital is a Product Engineering & AI Solutions Company developing intelligent software products that help organizations automate operations, improve efficiency, and accelerate growth.
+            Akarsh Digitals is a Product Engineering & AI Solutions Company developing intelligent software products that help organizations automate operations, improve efficiency, and accelerate growth.
           </p>
           <div className="flex gap-2 mt-5">
             {[Instagram, Linkedin, Facebook, Twitter, Youtube].map((Icon, i) => (

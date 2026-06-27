@@ -14,7 +14,7 @@ export const Route = createFileRoute("/contact")({
 });
 
 const offices = [
-  { city: "Hyderabad", heading: "Akarsh Digital Headquarters", sub: "Our primary office — home to product engineering, AI development, and customer success." },
+  { city: "Hyderabad", heading: "Akarsh Digitals Headquarters", sub: "Our primary office — home to product engineering, AI development, and customer success." },
 ];
 
 function ContactPage() {
@@ -115,7 +115,7 @@ function ContactPage() {
           <div className="text-center mb-10">
             <span className="text-xs font-bold uppercase tracking-[0.22em] text-primary">Worldwide</span>
             <h2 className="mt-2 font-display font-extrabold text-2xl text-[var(--primary-deep)]">
-              Akarsh Digital — Where We Are
+              Akarsh Digitals — Where We Are
             </h2>
             <div className="mx-auto mt-3 w-12 h-1 rounded-full bg-gradient-to-r from-[var(--primary-deep)] to-primary" />
             <p className="mt-4 text-sm text-muted-foreground max-w-xl mx-auto leading-relaxed">
@@ -133,7 +133,7 @@ function ContactPage() {
         <div className="container-x">
           <div className="text-center mb-12">
             <span className="text-xs font-bold uppercase tracking-[0.22em] text-primary">Our Locations</span>
-            <h2 className="mt-2 font-display font-extrabold text-2xl text-[var(--primary-deep)]">Akarsh Digital Office</h2>
+            <h2 className="mt-2 font-display font-extrabold text-2xl text-[var(--primary-deep)]">Akarsh Digitals Office</h2>
             <div className="mx-auto mt-3 w-12 h-1 rounded-full bg-gradient-to-r from-[var(--primary-deep)] to-primary" />
           </div>
 

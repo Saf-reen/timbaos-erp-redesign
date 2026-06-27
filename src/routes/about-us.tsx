@@ -56,7 +56,7 @@ function AboutPage() {
       {/* ── HERO ── */}
       <PageHero
         title="Building Products That Empower Businesses"
-        subtitle="Akarsh Digital is a Product Engineering & AI Solutions Company focused on creating intelligent software products that help organizations improve efficiency, automate operations, and accelerate growth."
+        subtitle="Akarsh Digitals is a Product Engineering & AI Solutions Company focused on creating intelligent software products that help organizations improve efficiency, automate operations, and accelerate growth."
         bgImage={handshake}
       />
 
@@ -70,7 +70,7 @@ function AboutPage() {
             </h2>
             <div className="mt-3 w-10 h-1 rounded-full bg-gradient-to-r from-[var(--primary-deep)] to-primary" />
             <p className="mt-5 text-muted-foreground leading-relaxed text-[15px]">
-              At Akarsh Digital, we believe technology should simplify business operations, not complicate them.
+              At Akarsh Digitals, we believe technology should simplify business operations, not complicate them.
               Our focus is on building scalable software products that help organizations improve productivity,
               automate workflows, and make better decisions through data and intelligent automation.
             </p>
@@ -96,7 +96,7 @@ function AboutPage() {
             <div className="absolute -inset-4 bg-accent/50 rounded-3xl blur-2xl" />
             <div className="relative rounded-2xl overflow-hidden border border-border shadow-[var(--shadow-card)]">
               <div className="h-1 w-full bg-gradient-to-r from-[var(--primary-deep)] to-primary" />
-              <img src={handshake} alt="Akarsh Digital team" className="w-full h-[320px] object-cover" loading="lazy" />
+              <img src={handshake} alt="Akarsh Digitals team" className="w-full h-[320px] object-cover" loading="lazy" />
               <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur rounded-xl px-4 py-3 shadow-lg border border-border">
                 <p className="text-[10px] font-bold uppercase tracking-widest text-primary">Focused On</p>
                 <p className="font-display font-extrabold text-xl text-[var(--primary-deep)]">Product Innovation</p>
@@ -125,7 +125,7 @@ function AboutPage() {
           <div className="order-1 lg:order-2">
             <span className="text-xs font-bold uppercase tracking-[0.22em] text-primary">Our Approach</span>
             <h2 className="mt-2 font-display font-extrabold text-2xl md:text-3xl text-[var(--primary-deep)] leading-snug">
-              Akarsh Digital – Product Engineering Across Industries
+              Akarsh Digitals – Product Engineering Across Industries
             </h2>
             <div className="mt-3 w-10 h-1 rounded-full bg-gradient-to-r from-[var(--primary-deep)] to-primary" />
             <p className="mt-5 text-muted-foreground leading-relaxed text-[15px]">
@@ -274,7 +274,7 @@ function AboutPage() {
           </div>
 
           <p className="text-center text-sm text-muted-foreground mt-10 italic">
-            These values form the core of who we are and how we build products at Akarsh Digital.
+            These values form the core of who we are and how we build products at Akarsh Digitals.
           </p>
         </div>
       </section>

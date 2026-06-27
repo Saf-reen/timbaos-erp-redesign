@@ -18,8 +18,8 @@ export const Route = createFileRoute("/services/$slug")({
   head: ({ params }) => {
     const isTimbaos = params.slug === "timbaos-erp";
     const title = isTimbaos
-      ? "Enterprise ERP Platform — Complete Business Management | Akarsh Digital"
-      : `${getService(params.slug)?.title ?? "Service"} — Akarsh Digital`;
+      ? "Enterprise ERP Platform — Complete Business Management | Akarsh Digitals"
+      : `${getService(params.slug)?.title ?? "Service"} — Akarsh Digitals`;
     return {
       meta: [
         { title },

@@ -16,7 +16,7 @@ const industries = [
     Icon: Building2,
     title: "Small & Medium Enterprises",
     img: handshake,
-    desc: "Akarsh Digital provides integrated business management solutions that help SMEs streamline operations, improve visibility, and support sustainable growth through a single intelligent platform.",
+    desc: "Akarsh Digitals provides integrated business management solutions that help SMEs streamline operations, improve visibility, and support sustainable growth through a single intelligent platform.",
     tags: ["Business Management", "Operational Efficiency", "Sustainable Growth"],
   },
   {
@@ -37,7 +37,7 @@ const industries = [
     Icon: GraduationCap,
     title: "Education",
     img: dashboard,
-    desc: "Akarsh Digital simplifies institutional operations for educational organizations through intelligent management platforms that automate reporting, scheduling, and administrative processes.",
+    desc: "Akarsh Digitals simplifies institutional operations for educational organizations through intelligent management platforms that automate reporting, scheduling, and administrative processes.",
     tags: ["Institutional Management", "Process Automation", "Reporting"],
   },
   {
@@ -62,7 +62,7 @@ function IndustriesPage() {
       {/* ── HERO ── */}
       <PageHero
         title="Intelligent Software for Every Industry"
-        subtitle="Akarsh Digital builds industry-focused software products that help organizations automate operations, improve efficiency, and accelerate growth."
+        subtitle="Akarsh Digitals builds industry-focused software products that help organizations automate operations, improve efficiency, and accelerate growth."
         bgImage={handshake}
       />
 

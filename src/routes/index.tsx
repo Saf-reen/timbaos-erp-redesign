@@ -111,7 +111,7 @@ function Home() {
 
           <div>
             <span className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[0.22em] uppercase text-primary border border-primary/30 rounded-full px-4 py-1.5 bg-accent mb-6">
-              Welcome to Akarsh Digital
+              Welcome to Akarsh Digitals
             </span>
             <h1 className="font-display font-extrabold text-4xl md:text-5xl leading-[1.1] text-[var(--primary-deep)]">
               Product Engineering<br />
@@ -146,7 +146,7 @@ function Home() {
               <div className="h-1 w-full bg-gradient-to-r from-[var(--primary-deep)] to-primary" />
               <img
                 src={handshake}
-                alt="Akarsh Digital — Product Engineering & AI Solutions"
+                alt="Akarsh Digitals — Product Engineering & AI Solutions"
                 className="w-full h-[320px] object-cover"
               />
             </div>
@@ -160,7 +160,7 @@ function Home() {
           <SectionLabel text="Who We Are" />
           <h2 className="section-title -mt-4">Transforming Business Challenges into Intelligent Software Products</h2>
           <p className="mt-6 text-muted-foreground leading-[1.9] text-[15px]">
-            At Akarsh Digital, we believe technology should simplify business operations, not complicate them.
+            At Akarsh Digitals, we believe technology should simplify business operations, not complicate them.
             Our focus is on building scalable software products that help organizations improve productivity,
             automate workflows, and make better decisions through data and intelligent automation. We combine
             product engineering expertise, modern cloud technologies, and AI-driven innovation to create
@@ -212,7 +212,7 @@ function Home() {
         <div className="container-x">
           <div className="text-center mb-12">
             <SectionLabel text="Our Advantage" />
-            <h2 className="section-title -mt-4">Why Choose Akarsh Digital?</h2>
+            <h2 className="section-title -mt-4">Why Choose Akarsh Digitals?</h2>
             <p className="mt-4 font-semibold text-foreground text-[15px]">
               Intelligent software products built around real business requirements.
             </p>

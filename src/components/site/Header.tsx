@@ -26,7 +26,7 @@ export function Header() {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
             </span>
             <p className="text-xs font-semibold text-[var(--primary-deep)] text-center">
-              <span className="font-black">Akarsh Digital</span> — Product Engineering & AI Solutions for Modern Businesses.{" "}
+              <span className="font-black">Akarsh Digitals</span> — Product Engineering & AI Solutions for Modern Businesses.{" "}
               <Link
                 to="/contact"
                 className="inline-flex items-center gap-1 underline underline-offset-2 font-bold hover:text-primary transition-colors"
